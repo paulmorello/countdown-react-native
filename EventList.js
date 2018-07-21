@@ -45,8 +45,12 @@ class EventList extends Component {
       <FlatList
         style={styles.list}
         data={this.state.events}
-        renderItem={({ item }) => <EventCard event={item} /> }
         keyExtractor={ item => item.id }
+        renderItem={({ item }) => (
+          <EventCard
+            event={ item } 
+          />
+        )}
       />
     );
   }
