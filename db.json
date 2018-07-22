@@ -1,21 +1,14 @@
 {
   "events": [
     {
-      "title": "Release RN Course",
-      "date": "2018-06-15T00:00:00.000Z",
+      "title": "Release RN course",
+      "date": "2020-06-15T00:00:00.000Z",
       "id": "05dafc66-bd91-43a0-a752-4dc40f039144"
-    }, {
-      "title": "Demo a new app",
-      "date": "2018-06-15T00:00:00.000Z",
-      "id": "05dafc66-bd91-43a0-a752-4dc40f032956"
-    }, {
-      "title": "Go on holiday",
-      "date": "2018-06-15T00:00:00.000Z",
-      "id": "05dafc66-bd91-43a0-r465-4dc40f039144"
-    }, {
-      "title": "Come back from holiday",
-      "date": "2018-06-15T00:00:00.000Z",
-      "id": "05dafc66-tg82-43a0-a752-4dc40f039144"
+    },
+    {
+      "title": "Testing new events",
+      "date": "2018-07-25T22:54:48.000Z",
+      "id": "9f73c0ca-0650-4912-8456-5ab29b9bc9b5"
     }
   ]
 }

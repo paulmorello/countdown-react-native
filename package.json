@@ -19,12 +19,13 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^27.0.1",
+    "expo": "^27.1.0",
     "moment": "^2.22.2",
     "react": "16.3.1",
     "react-native": "~0.55.2",
     "react-native-action-button": "^2.8.4",
     "react-native-modal-datetime-picker": "^6.0.0",
-    "react-navigation": "^2.8.0"
+    "react-navigation": "^2.8.0",
+    "uuid": "^3.3.2"
   }
 }

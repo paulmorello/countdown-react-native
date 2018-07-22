@@ -5,6 +5,7 @@ import {
   StyleSheet
 } from 'react-native';
 import ActionButton from 'react-native-action-button';
+import { getEvents } from './api';
 
 // File Imports
 import EventCard from './EventCard';
@@ -24,21 +25,23 @@ class EventList extends Component {
   }
 
   componentDidMount() {
-    setInterval( () => {
+    setInterval(() => {
       this.setState({
-        events: this.state.events.map(e => ({
-          ...e,
+        events: this.state.events.map(evt => ({
+          ...evt,
           timer: Date.now(),
         })),
       });
-    }, 1000)
+    }, 1000);
 
-    const events = require('./db.json').events.map( e => ({
-      ...e,
-      date: new Date(e.date),
-    }));
-    this.setState({ events });
+    this.props.navigation.addListener(
+      'didFocus',
+      () => {
+        getEvents().then(events => this.setState({ events }));
+      }
+    );
   }
+
 
   handleAddEvent = () => {
     this.props.navigation.navigate('form');
